@@ -1,0 +1,283 @@
+/* -------------------- */
+/* External Style Sheet */
+/* -------------------- */
+
+/* -------------------- */
+/* -- Globale Styling -- */
+/* -------------------- */
+
+/* --- Selecteer alle elementen */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Default font-size is 16px */
+    /* Pro Tip: zet font-size here to 62.5% */
+    /* Then you can work with rem everywhere */
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --- Root selector: eerste element in document (html) */
+:root {
+    background-color: #f6f6e9;
+}
+
+/* --- Type selector: html elementen */
+li {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 80px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+p {
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+/* -------------------- */
+/* -- Body Grid Setup -- */
+/* -------------------- */
+
+
+
+
+
+
+/* -------------------- */
+/* ------ Header ------ */
+/* -------------------- */
+
+/* Add GRID in header; remove nav absolute position */
+
+
+
+/* Child selector: direct kind van ander element */
+header > img {
+    width: 300px;
+    margin-left: 40px;
+    
+}
+
+nav {
+    position: absolute;
+    right: 70px;
+    top: 70px;
+}
+
+/* Descendant selector:  */
+ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+nav li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #291b25;
+    font-size: 2.4rem;
+}
+
+/* Pseudoklassen: voorgeprogrammeerde classes die actief we actief kunnen maken */
+nav > ul li:first-child {
+    margin-left: 0px;
+}
+
+nav > ul li a:hover {
+    color: #ed5b2d;
+}
+
+nav > ul li a:active {
+    color: #ed5b2d;
+}
+
+
+/* -------------------- */
+/* ------- Main ------- */
+/* -------------------- */
+section {
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.landing-img {
+    background-image: url(../../public/img/landingPage_img.png);
+    height: 900px;
+    background-size: contain; /* Zorgt ervoor dat de afbeelding volledig in het element past zonder te vervormen */
+    background-position: center; /* Plaatst de afbeelding gecentreerd in het element */
+    background-repeat: no-repeat; /* Voorkomt dat de afbeelding herhaald wordt */
+    background-position: 0 -150px; /* Verschuift de afbeelding naar links (0px) en omhoog (-150px) */
+}
+
+section > div {
+    width: 55%;
+
+    /* CSS Trick content te centeren */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section p {
+    padding-bottom: 20px;
+}
+
+/* ----- Section: Explore Sheets */
+
+/* Class selectors */
+.explore__btn {
+    margin-top: 50px;
+    width: auto;
+    padding: 12px 20px;
+    background-color: rgb(237, 91, 45, .8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 2.4rem;
+    cursor: pointer;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.explore__btn:hover {
+    background-color: #ed5b2d;
+}
+
+/* Id selectors */
+#explore-zone {
+    background-color: #291b25;
+    color: #f6f6e9;
+}
+/* #explore-zone > div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+
+/* -------------------------- */
+/* -- Genres Grid Styling -- */
+/* -------------------------- */
+
+
+
+
+
+
+/* ----- Section divider */
+
+hr {
+    width: 60%;
+    height: 2px;
+    background-color: #291b25;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ----- Section: About me */
+
+form {
+    width: 50%;
+    margin: 50 auto 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Attributen: alle elementen met gespecifieerde attribuut */
+form input[type="text"],
+form select,
+form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+
+form select {
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(237, 91, 45, .8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ed5b2d;
+}
+
+form input[type="text"],
+form select,
+form input[type="file"],
+form button {
+    margin-bottom: 20px;
+}
+
+form input[type="text"]:focus,
+form select:focus,
+form input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* ----- Section: About me */
+
+.about__content > img {
+    width: 300px;
+    float: left;
+    margin-right: 40px;
+}
+/* Pseudo-elementen: specifiek onderdeel van element (::) */
+.about__content > p:first-of-type::first-letter {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+
+/* -------------------- */
+/* ------ Footer ------ */
+/* -------------------- */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #291b25;
+}
+
+footer > p {
+    color: #f6f6e9;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
