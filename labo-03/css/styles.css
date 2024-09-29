@@ -54,11 +54,12 @@ nav {
 }
 
 /* Descendant selector:  */
-ul li {
+nav li {
     display: inline;
     margin-left: 30px;
 }
 
+/* Je kan beiden ook combineren ('li' is een descendant van 'nav' en 'a' is een direct kind van 'li') */
 nav li > a {
     text-decoration: none;
     text-transform: uppercase;
@@ -67,15 +68,15 @@ nav li > a {
 }
 
 /* Pseudoklassen: voorgeprogrammeerde classes die actief we actief kunnen maken */
-nav > ul li:first-child {
+nav > ul > li:first-child {
     margin-left: 0px;
 }
 
-nav > ul li a:hover {
+nav a:hover {
     color: #ed5b2d;
 }
 
-nav > ul li a:active {
+nav a:active {
     color: #ed5b2d;
 }
 
@@ -98,17 +99,13 @@ section {
     background-position: 0 -150px; /* Verschuift de afbeelding naar links (0px) en omhoog (-150px) */
 }
 
-section > div {
-    width: 55%;
+section > p {
+    width: 50%;
 
-    /* CSS Trick content te centeren */
+    /* CSS Trucje om content te centeren */
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-}
-
-section p {
-    padding-bottom: 20px;
 }
 
 /* ----- Section: Explore Sheets */
@@ -137,12 +134,6 @@ section p {
 #explore-zone {
     background-color: #291b25;
     color: #f6f6e9;
-    height: 500px;
-}
-#explore-zone > div {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 /* ----- Section divider */
@@ -223,13 +214,21 @@ form input[type="file"]:focus {
 
 /* ----- Section: About me */
 
-.about__content > img {
-    width: 300px;
+#about-us .about__content {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#about-us img {
+    width: 320px;
     float: left;
     margin-right: 40px;
 }
+
 /* Pseudo-elementen: specifiek onderdeel van element (::) */
-.about__content > p:first-of-type::first-letter {
+#about-us p:first-of-type::first-letter {
     font-size: 3.2rem;
     font-weight: bold;
 }
