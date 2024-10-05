@@ -30,7 +30,7 @@ li {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.2rem;
     margin-bottom: 80px;
     text-transform: capitalize;
     text-align: center;
@@ -42,15 +42,15 @@ h2 {
 
 /* Child selector: direct kind van ander element */
 header > img {
-    width: 300px;
+    width: 200px;
     margin-left: 40px;
     
 }
 
 nav {
     position: absolute;
-    right: 70px;
-    top: 70px;
+    right: 40px;
+    top: 40px;
 }
 
 /* Descendant selector:  */
@@ -64,7 +64,7 @@ nav li > a {
     text-decoration: none;
     text-transform: uppercase;
     color: #291b25;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 /* Pseudoklassen: voorgeprogrammeerde classes die actief we actief kunnen maken */
@@ -92,11 +92,10 @@ section {
 
 .landing-img {
     background-image: url(../../public/img/landingPage_img.png);
-    height: 900px;
+    height: 400px;
     background-size: contain; /* Zorgt ervoor dat de afbeelding volledig in het element past zonder te vervormen */
     background-position: center; /* Plaatst de afbeelding gecentreerd in het element */
     background-repeat: no-repeat; /* Voorkomt dat de afbeelding herhaald wordt */
-    background-position: 0 -150px; /* Verschuift de afbeelding naar links (0px) en omhoog (-150px) */
 }
 
 section > p {
@@ -119,7 +118,7 @@ section > p {
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 2.4rem;
+    font-size: 2rem;
     cursor: pointer;
 
     position: relative;
@@ -161,7 +160,7 @@ form {
 
 form label {
     display: block;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin-bottom: 5px;
     color: #333;
 }
@@ -176,7 +175,7 @@ form input[type="file"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 form select {
@@ -229,7 +228,7 @@ form input[type="file"]:focus {
 
 /* Pseudo-elementen: specifiek onderdeel van element (::) */
 #about-us p:first-of-type::first-letter {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: bold;
 }
 
@@ -250,6 +249,7 @@ footer > p {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    padding: 0px;
 }
 
 

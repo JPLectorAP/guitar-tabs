@@ -26,3 +26,19 @@ Verder laten we de studenten kennismaken met een divers aantal stijlregels.
 ## Labo-04
 
 In labo-04 maken we kennis met het layout systeem CSS Grid. We plaatsen een `ul` met een aantal `li` elementen in een grid layout, we bouwen een grid-template voor het plaatsen van de elementen binnen de `body`, en we veranderen ons `header` element in een grid container om te tonen hoe we met behulp van `justify-content` en `align-items` onze grid elementen horizontaal en verticaal kunnen plaatsen.
+
+## Labo-05
+
+In labo-05 voegen we het [reset.css](https://elad2412.github.io/the-new-css-reset/) bestand toe, en bekijken we het effect hiervan. 
+
+## Labo-06
+
+Tijdens labo-06 behandelen we HTML formulieren in meer detail, met o.a. de verschillende soorten input types, labels, placeholdes, groeperingen, etc.
+
+## Labo-07
+
+In labo-07 maken we kennis met een tweede CSS layout algoritme, namelijk CSS Flexbox.
+
+## Labo-08
+
+Tijdens labo-08 beginnen we met het responsive maken van onze website. Met andere woorden, we gaan er voor zorgen dat onze website er ook netjes uitziet op mobiele apparaten met een kleinere schermgrootte.

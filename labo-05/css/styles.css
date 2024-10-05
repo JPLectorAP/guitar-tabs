@@ -92,7 +92,7 @@ nav {
 
 /* Child selector: direct kind van ander element */
 header > img {
-    width: 300px;
+    width: 250px;
 }
 
 /* Descendant selector:  */
@@ -197,9 +197,9 @@ section > p {
 }
 
 .explore__grid .grid-item {
-    padding: 10rem;
+    padding: 5rem;
     color: #291b25;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     background-color: #f6f6e9;
     border-radius: 7px;
@@ -279,6 +279,7 @@ form button[type="submit"] {
     border-radius: 5px;
     font-size: 2rem;
     cursor: pointer;
+    text-align: center;
 }
 
 form button[type="submit"]:hover {
@@ -337,7 +338,7 @@ footer > p {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    padding: 0px;
+    padding: 0;
 }
 
 
